@@ -7,3 +7,10 @@
   gap: 2rem;
   align-items: flex-start;
 }
+
+/* Tela menor que 768px (dispositivo mobile) */
+@media (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
