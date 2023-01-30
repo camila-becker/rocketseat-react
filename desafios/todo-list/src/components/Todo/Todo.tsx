@@ -1,10 +1,11 @@
 import { PlusCircle } from "phosphor-react";
+import { Task } from "../Task/Task";
 import styles from "./Todo.module.css";
 
 export function Todo() {
   return (
     <>
-      <form>
+      <form className={styles.createTodo}>
         <input type="text" placeholder="Adicione uma nova tarefa" />
         <button type="submit">
           Criar
@@ -22,7 +23,9 @@ export function Todo() {
             <span>0</span>
           </strong>
         </div>
-        <div className={styles.todo}></div>
+        <div className={styles.todo}>
+          <Task />
+        </div>
       </div>
     </>
   );
