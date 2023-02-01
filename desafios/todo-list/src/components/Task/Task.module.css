@@ -35,6 +35,11 @@
   line-height: 1.6;
 }
 
+.taskCompleted {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
 .task button {
   background-color: transparent;
   border: none;

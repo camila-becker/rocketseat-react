@@ -63,7 +63,7 @@
   margin-left: 8px;
   background-color: var(--gray-400);
   padding: 0.125rem 0.5rem;
-  border-radius: 100%;
+  border-radius: 999px;
   color: var(--gray-200);
 }
 
@@ -82,4 +82,46 @@
   width: 100%;
   height: 244px;
   margin-top: 1.5rem;
+}
+
+.todoWithoutBorder {
+  border: none;
+  width: 100%;
+  height: 244px;
+}
+
+.emptyTask {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--gray-300);
+  line-height: 1.6;
+}
+
+.emptyTask strong {
+  margin-top: 1rem;
+}
+
+.clipboard {
+  color: var(--gray-400);
+}
+
+/* Tela menor que 768px (dispositivo mobile) */
+@media (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+
+  .todoContainer {
+    width: 388px;
+    padding: 0 1rem;
+  }
+
+  .createTodo {
+    width: 100%;
+    position: static;
+    margin-top: 2rem;
+    padding: 0 1rem;
+  }
 }
